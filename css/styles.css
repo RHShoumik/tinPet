@@ -1,12 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat";
+}
 #title {
   background-color: #ff4c68;
   color: white;
 }
-h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 2rem;
-}
+
 p {
   color: gray;
   font-family: "Ubuntu";
@@ -15,14 +22,14 @@ p {
 }
 .hero-title {
   margin-top: 3rem;
-  font-family: "Montserrat", sans-serif;
+
   font-size: 4rem;
   line-height: 1.5;
   font-weight: 900;
   color: white;
 }
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 /* Nav Bar */
 
@@ -39,7 +46,6 @@ p {
 }
 .nav-link {
   font-size: 1.4rem;
-  font-family: "Montserrat-Light";
 }
 
 /* download Buttons */
@@ -52,13 +58,22 @@ p {
 .hero-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 #features {
+  background-color: white;
   padding: 7% 15%;
+  position: relative;
+  z-index: 1;
 }
 .feature-box {
   text-align: center;
+}
+.feature-heading {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .icon {
@@ -67,4 +82,67 @@ p {
 }
 .icon:hover {
   color: #ff4c68;
+}
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+.testimonial-speech {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  padding-right: 10px;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-logo {
+  width: 15%;
+  margin: 20px 20px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+#pricing {
+  text-align: center;
+  padding: 3% 7%;
+}
+.pricing-column {
+  padding: 20px 20px;
+}
+
+/* CTA Section */
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  text-align: center;
+  padding: 7% 15%;
+}
+.cta-header {
+  font-size: 4.2rem;
+  line-height: 1.5;
+}
+/* Footer */
+#footer {
+  padding: 3% 15%;
+  text-align: center;
+}
+.social-icon {
+  margin: 20px 10px;
+}
+@media (max-width: 990px) {
+  #title {
+    text-align: center;
+  }
+  .hero-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
